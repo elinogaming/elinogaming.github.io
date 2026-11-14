@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ELINA</title>
+<meta name="description" content="YouTube · Kick · Instagram · TikTok · Telegram">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ELINA">
+<meta property="og:description" content="YouTube · Kick · Instagram · TikTok · Telegram">
+<meta property="og:image" content="https://elinogaming.github.io/avatar.jpg">
+<meta property="og:url" content="https://elinogaming.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="avatar.jpg">
+<style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Karla:wght@500&family=Vazirmatn:wght@400;600&display=swap">
+<style>
+/* single pink look from approved style 3.1: centered profile, cream pills with green outline */
+:root{
+  --bg:#fbd3e1; --ink:#9c3f69; --name:#e9739f; --pill:#fffaf3; --line:#b5d77a; --leaf:#7fae3c; --white:#ffffff;
+  --shade:rgba(0,0,0,.45);
+  --display:'Fredoka','Vazirmatn',system-ui,sans-serif; --fa:'Vazirmatn','Fredoka',system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--display);min-height:100%;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.page{position:relative;max-width:440px;margin:0 auto;padding-block:54px 40px;text-align:center}
+.sp{position:absolute;color:var(--white);font-size:18px;pointer-events:none;user-select:none}
+/* photo hero, Linktree layout: the page is a rounded card on a deeper pink, the photo fills its top and fades into it */
+body{background:#f1b5cb;padding-left:max(10px,env(safe-area-inset-left,0px));padding-right:max(10px,env(safe-area-inset-right,0px))}
+.page{max-width:460px;margin-top:24px;padding:0 20px 40px;background:var(--bg);border-radius:26px 26px 0 0;overflow:hidden;min-height:calc(100vh - 24px)}
+@media (max-width:479px){.page{margin-top:10px;min-height:calc(100vh - 10px)}}
+.hero{position:relative;margin:0 -20px;height:min(118vw,520px)}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;
+  -webkit-mask-image:linear-gradient(#000 55%,transparent 98%);mask-image:linear-gradient(#000 55%,transparent 98%)}
+.hero+h1{margin-top:-78px;position:relative}
+/* share-this-page button, top-right of the photo like Linktree's */
+.pshare{position:absolute;top:14px;right:14px;z-index:2;width:42px;height:42px;border-radius:14px;border:0;cursor:pointer;
+  background:rgba(40,20,30,.35);color:#fff;display:grid;place-items:center;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.pshare:hover{background:rgba(40,20,30,.5)}
+h1{margin:10px 0 0;font-size:46px;font-weight:700;letter-spacing:2px;color:var(--white);
+  -webkit-text-stroke:5px var(--name);paint-order:stroke fill}
+.bio{font-family:var(--fa);direction:rtl;font-size:14px;line-height:1.7;margin:10px auto 0;max-width:300px}
+.socials{display:flex;justify-content:center;gap:18px;margin:16px 0 20px}
+.socials{--tri:var(--bg)}
+.socials svg{filter:drop-shadow(1px 2px 1.5px rgba(156,63,105,.25))}
+.socials a{color:var(--white);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;transition:transform .15s}
+.socials a:hover{transform:translateY(-2px)}
+.ic{width:26px;height:26px;flex:none}
+.links{display:flex;flex-direction:column;gap:11px}
+/* soft raised look: a light pink offset edge plus a faint blur, like Linktree's 3D buttons but mellow */
+.link{--tri:var(--pill);position:relative;display:flex;align-items:center;background:var(--pill);border:2px solid var(--line);border-radius:999px;
+  box-shadow:3px 4px 0 rgba(156,63,105,.16),0 8px 18px rgba(156,63,105,.12);transition:transform .15s,box-shadow .15s}
+.link:hover{transform:translate(-1px,-2px);box-shadow:4px 6px 0 rgba(156,63,105,.16),0 10px 22px rgba(156,63,105,.14)}
+/* label centered in Vanillamace's link type: Karla 500, 16px, grey #888 */
+.link>a{flex:1;position:relative;display:flex;align-items:center;justify-content:center;min-height:56px;padding:13px 50px;color:#888888;text-decoration:none;font-family:'Karla',system-ui,sans-serif;font-weight:500;font-size:16px;letter-spacing:-.2px;min-width:0}
+.link>a .ic{position:absolute;left:18px;top:50%;transform:translateY(-50%)}
+.link .more{position:absolute;right:6px;top:50%;transform:translateY(-50%);margin:0;color:#888888}
+.link>a .ic{color:var(--leaf)}
+.more{flex:none;width:44px;height:44px;margin-right:6px;border:0;background:none;border-radius:50%;color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.more:hover{background:var(--bg)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--leaf);outline-offset:2px}
+
+/* share sheet: the standard neutral share sheet (Linktree-like), deliberately not in the page theme */
+.backdrop{position:fixed;inset:0;background:var(--shade);z-index:20}
+.sheet{--s-bg:#ffffff;--s-fg:#1a1a1a;--s-line:#e2e2e2;
+  position:fixed;left:0;right:0;bottom:0;z-index:21;margin:0 auto;max-width:512px;background:var(--s-bg);color:var(--s-fg);
+  font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;border-radius:24px 24px 0 0;
+  padding:12px 0 calc(22px + env(safe-area-inset-bottom,0px));animation:up .22s ease-out}
+@keyframes up{from{transform:translateY(100%)}}
+.sheet header{display:flex;align-items:center;justify-content:center;position:relative;font-weight:600;font-size:16px;min-height:40px}
+.sheet .x{position:absolute;right:max(14px,env(safe-area-inset-right,0px));top:0;width:40px;height:40px;border:0;background:none;color:var(--s-fg);font-size:28px;line-height:1;cursor:pointer;border-radius:50%}
+.sheet .x:hover{background:#f2f2f2}
+.prev{margin:14px auto 22px;width:min(254px,80%);background:#4a1d2c;color:#fff;border-radius:22px;padding:24px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.prev img{width:120px;height:120px;border-radius:12px;object-fit:cover}
+.prev b{font-size:20px;margin-top:6px}
+.prev small{font-size:13px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row{position:relative;border-bottom:1px solid var(--s-line);padding-bottom:16px}
+.opts{display:flex;gap:6px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:0 max(14px,env(safe-area-inset-left,0px))}
+.opts::-webkit-scrollbar{display:none}
+.opts>*{flex:none;width:70px;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--s-fg);text-decoration:none;background:none;border:0;cursor:pointer;font:inherit;font-size:13px;padding:0}
+.opts .c{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.opts .c svg{width:24px;height:24px}
+.nav{position:absolute;top:6px;width:36px;height:36px;border-radius:50%;border:0;background:#fff;color:var(--s-fg);box-shadow:0 1px 6px rgba(0,0,0,.25);cursor:pointer;font-size:22px;line-height:1}
+#sh-next{right:max(12px,env(safe-area-inset-right,0px))}
+#sh-prev{left:max(12px,env(safe-area-inset-left,0px))}
+.toast{position:fixed;left:50%;bottom:calc(30px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:9px 18px;border-radius:999px;font-family:system-ui,sans-serif;font-size:14px;z-index:30}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<div class="page">
+  <div class="hero"><img src="photo.jpg" alt="Elina"><button class="pshare" id="pshare" type="button" aria-label="Share this page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></button></div>
+  <h1>ELINA</h1>
+  <nav class="socials" id="socials" aria-label="Social accounts"></nav>
+  <div class="links" id="links"></div>
+</div>
+
+<div class="backdrop" id="bd" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" hidden>
+  <header><span id="sh-t">Share link</span><button class="x" id="sh-x" type="button" aria-label="Close">×</button></header>
+  <div class="prev"><img src="avatar.jpg" alt=""><b id="sh-name"></b><small id="sh-url"></small></div>
+  <div class="row">
+    <div class="opts" id="opts"></div>
+    <button class="nav" id="sh-prev" type="button" aria-label="Scroll left" hidden>‹</button>
+    <button class="nav" id="sh-next" type="button" aria-label="Scroll right">›</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+const ICON={
+yt:'<svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="5"/><path d="M10 9l5 3-5 3z" style="fill:var(--tri)"/></svg>',
+kick:'<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" fill="currentColor"/><path d="M7.5 6h3v4h1.5V7.5h2V6h3v4h-2v1.5h-1.5v1h1.5V14h2v4h-3v-1.5h-2V15h-1.5v3h-3z" style="fill:var(--tri)"/></svg>',
+ig:'<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg>',
+tt:'<svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3h3c.3 2 1.6 3.4 4 3.6v3c-1.6 0-3-.5-4-1.3V15a6 6 0 1 1-6-6v3.2a2.8 2.8 0 1 0 3 2.8z"/></svg>',
+tg:'<svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1 .4-1 1.6 0 1.9l4.6 1.5 1.8 5.5c.3.8 1.2 1 1.8.4l2.6-2.4 4.6 3.4c.7.5 1.6.1 1.8-.7l3-15.5c.2-1-.8-1.7-1.6-1.3zM9.6 14.4l8.3-7.3-6.6 8.6-.3 3z"/></svg>'};
+// Edit links here.
+const LINKS=[
+ {k:'yt',name:'YouTube',url:'https://www.youtube.com/@elinogaming'},
+ {k:'kick',name:'Kick · Live',url:'https://kick.com/elino1gaming'},
+ {k:'ig',name:'Instagram',url:'https://www.instagram.com/eli1nnaa'},
+ {k:'tt',name:'TikTok',url:'https://www.tiktok.com/@elli1nnaa'},
+ {k:'tg',name:'Telegram',url:'https://t.me/eli1nnaaa'}];
+
+// share targets, in Linktree's order plus Telegram, Reddit and Email. u = encoded url, t = encoded title
+const SHARE=[
+ {n:'X',bg:'#000',svg:'<path fill="#fff" d="M17.8 3h3l-6.6 7.6L22 21h-6.1l-4.8-6.2L5.6 21h-3l7-8.1L2.2 3h6.2l4.4 5.7zm-1 16.2h1.7L7.3 4.7H5.5z"/>',h:(u,t)=>`https://x.com/intent/post?url=${u}&text=${t}`},
+ {n:'Facebook',bg:'#1877f2',svg:'<path fill="#fff" d="M13.5 22v-8.5h2.9l.4-3.4h-3.3V8c0-1 .3-1.6 1.7-1.6H17V3.3c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.4H7.1v3.4H10V22z"/>',h:(u)=>`https://www.facebook.com/sharer/sharer.php?u=${u}`},
+ {n:'WhatsApp',bg:'#25d366',svg:'<path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/>',h:(u,t)=>`https://wa.me/?text=${t}%20${u}`},
+ {n:'LinkedIn',bg:'#0a66c2',svg:'<g fill="#fff"><rect x="4" y="9" width="3.4" height="11"/><circle cx="5.7" cy="5.6" r="2"/><path d="M10 9h3.2v1.5c.5-.9 1.7-1.8 3.5-1.8 3.4 0 4 2.2 4 5V20h-3.4v-5.4c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z"/></g>',h:(u)=>`https://www.linkedin.com/sharing/share-offsite/?url=${u}`},
+ {n:'Messenger',bg:'linear-gradient(45deg,#0099ff,#a033ff 60%,#ff5280)',svg:'<path fill="#fff" d="M12 2.5C6.7 2.5 2.6 6.4 2.6 11.6c0 2.7 1.1 5 2.9 6.6v3.3l3-1.7c1.1.3 2.2.5 3.5.5 5.3 0 9.4-3.9 9.4-9.1S17.3 2.5 12 2.5z"/><path fill="#7a3cff" d="M6.6 14.6l3.4-5.4 2.8 2.2 3.4-2.3-3.4 5.4-2.8-2.2z"/>',h:(u)=>`fb-messenger://share/?link=${u}`},
+ {n:'Snapchat',bg:'#fffc00',svg:'<path fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round" d="M12 3.2c2.9 0 4.9 2.2 4.9 5.1v2.2l1.5-.5c.6 0 .9.6.4 1l-2 .9c.6 1.6 1.8 2.8 3.4 3.4.5.2.4.7-.1.9-1 .3-1.6.4-1.8 1-.1.4-.5.5-1 .4-1-.2-1.9 0-2.7.6s-1.5 1.1-2.6 1.1-1.9-.5-2.6-1.1-1.7-.8-2.7-.6c-.5.1-.9 0-1-.4-.2-.6-.8-.7-1.8-1-.5-.2-.6-.7-.1-.9 1.6-.6 2.8-1.8 3.4-3.4l-2-.9c-.5-.4-.2-1 .4-1l1.5.5V8.3c0-2.9 2-5.1 4.9-5.1z"/>',h:(u)=>`https://www.snapchat.com/scan?attachmentUrl=${u}`},
+ {n:'Telegram',bg:'#229ed9',svg:'<path fill="#fff" d="M21.5 3.6 2.9 10.8c-1 .4-1 1.6 0 1.9l4.6 1.5 1.8 5.5c.3.8 1.2 1 1.8.4l2.6-2.4 4.6 3.4c.7.5 1.6.1 1.8-.7l3-15.5c.2-1-.8-1.7-1.6-1.3zM9.6 14.4l8.3-7.3-6.6 8.6-.3 3z"/>',h:(u,t)=>`https://t.me/share/url?url=${u}&text=${t}`},
+ {n:'Reddit',bg:'#ff4500',svg:'<g fill="#fff"><ellipse cx="12" cy="14" rx="7.5" ry="5"/><circle cx="18.5" cy="9.5" r="1.7"/><circle cx="5.5" cy="9.5" r="1.7"/><circle cx="16.5" cy="4.5" r="1.4"/><path d="M12 9l1.2-5 3.3.6" stroke="#fff" stroke-width="1" fill="none"/></g><circle cx="9.3" cy="13.3" r="1.2" fill="#ff4500"/><circle cx="14.7" cy="13.3" r="1.2" fill="#ff4500"/><path d="M9.3 16c1.6 1.2 3.8 1.2 5.4 0" stroke="#ff4500" stroke-width="1" fill="none" stroke-linecap="round"/>',h:(u,t)=>`https://www.reddit.com/submit?url=${u}&title=${t}`},
+ {n:'Email',bg:'#6b6b6b',svg:'<g fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></g>',h:(u,t)=>`mailto:?subject=${t}&body=${u}`}];
+
+const $=id=>document.getElementById(id);
+const dots='<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>';
+$('socials').innerHTML=LINKS.map(l=>`<a href="${l.url}" target="_blank" rel="noopener" aria-label="${l.name}">${ICON[l.k]}</a>`).join('');
+$('links').innerHTML=LINKS.map((l,i)=>`<div class="link"><a href="${l.url}" target="_blank" rel="noopener">${ICON[l.k]}<span>${l.name}</span></a><button class="more" type="button" data-i="${i}" aria-label="Share ${l.name}">${dots}</button></div>`).join('');
+
+const copyBtn='<button type="button" id="sh-copy"><span class="c" style="background:#e4e4de;color:#1a1a1a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></svg></span><span id="sh-copy-l">Copy link</span></button>';
+$('opts').innerHTML=copyBtn+SHARE.map((s,i)=>`<a data-s="${i}" target="_blank" rel="noopener"><span class="c" style="background:${s.bg}"><svg viewBox="0 0 24 24" aria-hidden="true">${s.svg}</svg></span>${s.n}</a>`).join('');
+
+let cur=null,opener=null;
+function openSheet(i,btn){
+  cur=typeof i==='object'?i:LINKS[i];opener=btn;
+  $('sh-t').textContent=cur===PAGE?'Share page':'Share link';
+  const u=encodeURIComponent(cur.url),t=encodeURIComponent(cur.name+' · Elina');
+  $('sh-name').textContent=cur.name.split(' ')[0].toLowerCase();
+  $('sh-url').textContent=cur.url.replace(/^https:\/\//,'');
+  document.querySelectorAll('#opts [data-s]').forEach(a=>a.href=SHARE[a.dataset.s].h(u,t));
+  $('sh-copy-l').textContent='Copy link';
+  $('bd').hidden=$('sheet').hidden=false;$('opts').scrollLeft=0;navState();$('sh-x').focus();
+}
+function closeSheet(){$('bd').hidden=$('sheet').hidden=true;opener&&opener.focus()}
+const PAGE={k:'page',name:'Elina',url:location.origin+'/'};
+$('pshare').onclick=e=>openSheet(PAGE,e.currentTarget);
+$('links').addEventListener('click',e=>{const b=e.target.closest('.more');if(b)openSheet(+b.dataset.i,b)});
+$('bd').onclick=$('sh-x').onclick=closeSheet;
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('sheet').hidden)closeSheet()});
+// arrow buttons scroll the app row, and hide at either end
+const o=$('opts');
+function navState(){$('sh-prev').hidden=o.scrollLeft<4;$('sh-next').hidden=o.scrollLeft+o.clientWidth>=o.scrollWidth-4}
+o.addEventListener('scroll',navState);
+$('sh-next').onclick=()=>o.scrollBy({left:o.clientWidth*.7});
+$('sh-prev').onclick=()=>o.scrollBy({left:-o.clientWidth*.7});
+let tt;function toast(m){const t=$('toast');t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,1800)}
+$('sh-copy').onclick=()=>{
+  const fallback=()=>{const s=getSelection(),r=document.createRange();$('sh-url').textContent=cur.url;r.selectNodeContents($('sh-url'));s.removeAllRanges();s.addRange(r);toast('Link selected, press copy')};
+  try{navigator.clipboard.writeText(cur.url).then(()=>{$('sh-copy-l').textContent='Copied!';toast('Link copied')},fallback)}catch(e){fallback()}
+};
+</script>
+
+</body>
+</html>
